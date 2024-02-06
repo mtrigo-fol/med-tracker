@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { StyleSheet, View, Text, TextInput, Button, FlatList } from "react-native";
-
 import ListItem from "./components/contact";
 
 const style = StyleSheet.create({
