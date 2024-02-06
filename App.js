@@ -67,7 +67,7 @@ const App = () => {
             <Button title="Add Another Item" onPress={addAnotherItem}></Button>
         </View>
         <View style={style.button}>
-            <Button title="Clear List" onPress={() => updateList([])}></Button>
+            <Button title="Filter Items" onPress={() => updateList([])}></Button>
         </View>
     </View>
 };
