@@ -57,14 +57,14 @@ const App = () => {
 
     return <View style={style.appView}>
         <View style={style.list}>
-            <Text style={ { fontSize: 40, textAlign: 'center' }}>Grocery List</Text>
+            <Text style={ { fontSize: 40, textAlign: 'center' }}>Med-Tracker</Text>
             <FlatList data={list} renderItem={renderListItem}></FlatList>
         </View>
         <View>
-            <TextInput style={style.textInput} placeholder="Grocery Item To Add" value={textInputText} onChangeText={text => updateTextInputText(text)}></TextInput>
+            <TextInput style={style.textInput} placeholder="New Medicine Track" value={textInputText} onChangeText={text => updateTextInputText(text)}></TextInput>
         </View>
         <View style={style.button}>
-            <Button title="Add Another Item" onPress={addAnotherItem}></Button>
+            <Button title="Add Item" onPress={addAnotherItem}></Button>
         </View>
         <View style={style.button}>
             <Button title="Clear List" onPress={() => updateList([])}></Button>
